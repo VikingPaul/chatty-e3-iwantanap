@@ -3,12 +3,11 @@ var Chatty = (function(oldChatty) {
   //Array to store curses from JSON into
   var curses = [];
   //Begin XHR
-  var aiXML = new XMLHttpRequest();
-  aiXML.addEventListener("load", function(){
-    curses = JSON.parse(this.responseText).bannedNameList.word;
+  $.ajax({
+    url: "curse.json",
+  }).done(function(data) {
+    curses = data.bannedNameList.word;
   });
-  aiXML.open("GET", "curse.json");
-  aiXML.send();
   //End XHR
 
   oldChatty.checkCurse = function() {
@@ -30,7 +29,7 @@ var Chatty = (function(oldChatty) {
 
   //Reverses the previous process, but only for 1 message. Takes Styling out of the string.
   oldChatty.revertCurse = function(msgText, msgID) {
-  msgID = document.getElementById(msgID)
+  msgID = $(`#${msgID}`)
   let spanOpen = new RegExp (/\<span class="curse"\>/, "ig");
   let spanClose = new RegExp (/\<\/span\>/, "ig");
 

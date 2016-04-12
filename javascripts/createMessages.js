@@ -13,7 +13,7 @@ var Chatty = ( (oldChatty) => {
 
     //Takes the value of the input box and runs it through the addEmoji function and the
     // returned value gets added to the newMessage object
-    newMessage.message = Chatty.addEmoji(document.getElementById("message-input").value);
+    newMessage.message = Chatty.addEmoji($("#message-input").val());
 
     //Gets the current time of the message input and adds it to the newMessage object
     newMessage.timestamp = new Date();

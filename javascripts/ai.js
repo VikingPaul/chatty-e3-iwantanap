@@ -3,12 +3,11 @@ var Chatty = (function(oldChatty) {
   //Array for the responses to be stored into
   let ai = [];
   //Starts XHR
-  let aiXML = new XMLHttpRequest();
-  aiXML.addEventListener("load", function(){
-    ai = JSON.parse(this.responseText);
-  });
-  aiXML.open("GET", "ai.json");
-  aiXML.send();
+  $.ajax({
+    url: "ai.json"
+  }).done(function(json) {
+    ai = json
+  })
   //Ends XHR
 
   //Chooses which 'AI' response to post
@@ -43,12 +42,10 @@ var Chatty = (function(oldChatty) {
 
   //Prevents user from editing or deleting AI responses
   oldChatty.stopEditDelete = function() {
-    let runThrough = document.getElementsByClassName('container-fluid');
+    let runThrough = $('.container-fluid');
     for (let i in runThrough) {
       if (runThrough[i].id === "-1") {
-        for (let j=0; j<2; j++) {
-          runThrough[i].getElementsByTagName('div')[1].getElementsByTagName('button')[j].disabled = true
-        };
+        $(runThrough[i]).find('button').prop("disabled", true)
       };
     };
   }
