@@ -26,7 +26,7 @@ var Chatty = ((oldChatty) => {
 
     // Selects users at time of message being entered and returns the value
     oldChatty.selectUsers  = () => { 
-        let selectedUser = document.getElementById("user-dropdown").value; 
+        let selectedUser = $("#user-dropdown").val(); 
         if (selectedUser === "defaultVal") {
             alert("Select a user, bozo.")
         } else if (selectedUser === "addUser"){ 

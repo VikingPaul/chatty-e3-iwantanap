@@ -14,7 +14,7 @@ var Chatty = (function(oldChatty) {
         //Adds Emojis to the string
         buildString = Chatty.addEmoji(buildString);
         //Puts string into the DOM
-        document.getElementById("message-area").innerHTML = buildString;
+        $("#message-area").html(buildString);
         //Check for empty string and stops from editing or deleting AI responses
         Chatty.checkClearButton();
         Chatty.stopEditDelete();
@@ -22,10 +22,10 @@ var Chatty = (function(oldChatty) {
 
     //Checks to see if clear button is useable or not.
     oldChatty.checkClearButton = function() {
-        if (document.getElementById("message-area").innerHTML === "") {
-          document.getElementById("clear-board").disabled = true;
+        if ($("#message-area").html() === "") {
+            $("#clear-board").prop("disabled", true);
         } else {
-            document.getElementById("clear-board").disabled = false;
+            $("#clear-board").prop("disabled", false);
         }
     }
 
