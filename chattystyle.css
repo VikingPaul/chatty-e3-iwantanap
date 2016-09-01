@@ -1,0 +1,456 @@
+/*Needed for the Bootstrap nav bar also default 'light-theme'*/
+body { 
+  box-sizing: border-box;
+  font-size: 1.75em;
+  padding-top: 50px;
+  color: #727272;
+  background-color: #f8f8f8;
+}
+
+.navbar {
+  width: 100%;
+}
+
+/*For the title font in the nav area*/
+.nav-font {
+  font-family: 'Lobster Two', cursive;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+/*Makes usernames bold*/
+.bold {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: slategray;
+  display: inline;
+}
+
+/*Sizing of the message area div*/
+#message-area {
+  width: 90%;
+  padding: 2% 3% 2% 0;
+  margin: 2em auto;
+  height: 80vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 2px solid lightgray;
+}
+
+/*For the checked 'Large Text Checkbox'*/
+.larger-text {
+  font-size: 2.5rem;
+}
+
+/*Gives some space between messages*/
+.message-text {
+  margin-bottom: 1.75rem;
+}
+
+/*Gives a different font to the bonus timestamp*/
+.time-stamp {
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: courier;
+  text-decoration: underline;
+  margin: 0;
+}
+
+/*Gives icons some space*/
+.glyphicon {
+  padding: 0 5px;
+}
+
+/*Lengthens the message input*/
+.input-width {
+  min-width: 40vw;
+}
+
+
+/***************************** SETS STYLE FOR THEME 1 (Lisa Frank) ********************************/
+/*Main Theme Assets*/
+.theme1 {
+  background: url(img/theme1lisa.jpg) black center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Indie Flower', cursive;
+}
+
+/*Main Theme Assets*/
+.theme1 #message-area {
+  background-color: rgba(240, 213, 247, .9);
+  color: #3CB4B9;
+}
+
+/*Overrides Logo Assets*/
+.theme1 .nav-font {
+  font-family: 'Bonbon', cursive;
+  font-size: 45px;
+  margin: 2px;
+}
+
+/*Overrides Timestamp Styling*/
+.theme1 .time-stamp{
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/*Overrides User Styling*/
+.theme1 .time-stamp .bold {
+  font-family: 'Bonbon', cursive;
+  color: #FF53D5;
+}
+
+/*Overrides Button Styling*/
+.theme1 button {
+  border: 3px solid #FF53D5;
+  background-color: #FF9A04;
+  color: white;
+}
+
+.theme1 .editThisMessage,
+.theme1 .deleteThisMessage {
+  font-size: 20px;
+}
+
+.theme1 button:hover,
+.theme1 button:focus,
+.theme1 button:active {
+  border: 3px solid #FF9A04;
+  background-color: #FF53D5;
+  color: white;
+}
+
+.theme1 button:disabled:hover {
+  border: 3px solid #FF9A04;
+  background-color: #FF53D5;
+  color: white;
+}
+
+/*Styles Every Other Message*/
+.theme1 #message-area .container-fluid:nth-child(2n+1) {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/***************************** SETS STYLE FOR THEME 2 (SpaceJam Phresh) ********************************/
+/*Main Theme Assets*/
+.theme2 {
+  background: url(img/theme2space.jpg) black center center fixed;
+  color: white;
+  font-family: 'Michroma', sans-serif;
+  font-size: 12px;
+}
+
+/*Main Theme Assets*/
+.theme2 #message-area {
+  background-color: #08469D;
+  color: #D3D572;
+}
+
+/*Overrides Logo Assets*/
+.theme2 .nav-font {
+  font-family: 'Michroma', sans-serif;
+  font-size: 25px;
+}
+
+/*Overrides Timestamp Styling*/
+.theme2 .time-stamp{
+  font-family: 'Michroma', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*Overrides User Styling*/
+.theme2 .time-stamp .bold {
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  color: #CD5615;
+  font-size: 18px;
+}
+
+/*Overrides Button Styling*/
+.theme2 button {
+  border: 3px solid #CD5615;
+  background-color: #F6CB1C;
+  color: #CD5615;
+}
+
+.theme2 .editThisMessage,
+.theme2 .deleteThisMessage {
+  font-size: 10px;
+}
+
+.theme2 button:hover,
+.theme2 button:focus,
+.theme2 button:active {
+  border: 3px solid #F6CB1C;
+  background-color: #CD5615;
+  color: #F6CB1C;
+}
+
+.theme2 button:disabled:hover {
+  border: 3px solid #F6CB1C;
+  background-color: #CD5615;
+  color: #F6CB1C;
+}
+
+/*Styles Every Other Message*/
+.theme2 #message-area .container-fluid:nth-child(2n+1) {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/***************************** SETS STYLE FOR THEME 3 (I'm Boring) ********************************/
+/*Main Theme Assets*/
+.theme3 {
+  background-color: #272b30;
+  color: #c8c8c8;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/*Main Theme Assets*/
+.theme3 #message-area {
+  background-color: #1c1e22;
+  color: white;
+}
+
+/*Overrides Logo Assets*/
+.theme3 .nav-font {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 45px;
+}
+
+/*Overrides Timestamp Styling*/
+.theme3 .time-stamp{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*Overrides User Styling*/
+.theme3 .time-stamp .bold {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: lightblue;
+}
+
+/*Overrides Button Styling*/
+.theme3 button {
+  border: 3px solid #3e444c;
+  background-color: #c8c8c8;
+  color: #3e444c;
+}
+
+.theme3 .editThisMessage,
+.theme3 .deleteThisMessage {
+  font-size: 14px;
+}
+
+.theme3 button:hover,
+.theme3 button:focus,
+.theme3 button:active {
+  border: 3px solid #ffffff;
+  background-color: #3e444c;
+  color: #ffffff;
+}
+
+.theme3 button:disabled:hover {
+  border: 3px solid #ffffff;
+  background-color: #3e444c;
+  color: #ffffff;
+}
+
+/*Styles Every Other Message*/
+.theme3 #message-area .container-fluid:nth-child(2n+1) {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/***************************** SETS STYLE FOR THEME 4 (Burn with fire) ********************************/
+/*Main Theme Assets*/
+.theme4 {
+  background-color: #272b30;
+  color: #c8c8c8;
+  font-family: 'Candal', sans-serif;
+  font-size: 12px;
+}
+
+/*Main Theme Assets*/
+.theme4 #message-area {
+  background-color: firebrick;
+  color: white;
+  animation: animationBox 1s ease-in-out infinite alternate;
+}
+
+/*Really awesome firey background animation*/
+@keyframes animationBox
+{0% {box-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;}
+100% {box-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #fefcc9,
+  -20px -20px 40px #feec85,
+  22px -42px 60px #ffae34,
+  -22px -58px 50px #ec760c,
+  0 -82px 80px #cd4606,
+  10px -90px 80px  #973716;}}
+
+/*Overrides Logo Assets*/
+.theme4 .nav-font {
+  color: firebrick;
+  font-size: 4em;
+  text-shadow: 0 0 20px #fefcc9,
+  10px -10px 30px #feec85,
+  -20px -20px 40px #ffae34,
+  20px -40px 50px #ec760c,
+  -20px -60px 60px #cd4606,
+  0 -80px 70px #973716,
+  10px -90px 80px #451b0e;
+}
+
+/*Overrides Timestamp Styling*/
+.theme4 .time-stamp{
+  font-family: 'Candal', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/*Overrides User Styling*/
+.theme4 .time-stamp .bold {
+  font-family: 'Candal', sans-serif;
+  color: #ffae34;
+}
+
+/*Overrides Button Styling*/
+.theme4 button {
+  border: 3px solid #3e444c;
+  background-color: #c8c8c8;
+  color: #3e444c;
+}
+
+.theme4 .editThisMessage,
+.theme4 .deleteThisMessage {
+  font-size: 14px;
+}
+
+.theme4 button:hover,
+.theme4 button:focus,
+.theme4 button:active {
+  border: 3px solid #ffffff;
+  background-color: #ec760c;
+  color: #ffffff;
+}
+
+.theme4 button:disabled:hover {
+  border: 3px solid #ffffff;
+  background-color: #ec760c;
+  color: #ffffff;
+}
+
+/*Styles Every Other Message*/
+.theme4 #message-area .container-fluid:nth-child(2n+1) {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+
+/***************************** Dark theme styles ********************************/
+.dark-theme {
+  color: #f8f8f8;
+  background-color: gray;
+}
+
+.dark-theme #message-area {
+  color: #f8f8f8;
+  background-color: black;
+}
+
+.dark-theme p {
+  color: #f8f8f8;
+}
+
+.dark-theme select {
+  color: #727272;
+}
+
+.dark-theme #message-area .container-fluid:nth-child(2n+1) {
+  background-color: rgba(255, 255, 255, .05);
+}
+
+/***************************** Modal Override for theme styles ********************************/
+#themeModal {
+  color: #727272;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+}
+
+#themeModal p{
+  color: #727272;
+}
+
+#themeModal select {
+  color: #727272;
+}
+
+#themeModal button {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+#themeModal .close {
+  font-size: 2em;
+  width: 10%;
+}
+
+#themeModal h3 {
+  margin: 7px;
+}
+
+
+
+/***************************** Edited Tag CSS ********************************/
+
+.editedTag {
+  display: block;
+  font-size: 10px;
+}
+
+#editMode {
+  width: 100%;
+  color: black;
+}
+
+/***************************** CURSING! ********************************/
+
+.curse {
+  font-weight: bold;
+  font-size: 6vw;
+  animation-name: color_change;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@-webkit-keyframes color_change {
+  from { color: yellow; }
+  to { color: red; }
+}
+@-moz-keyframes color_change {
+  from { color: yellow; }
+  to { color: red; }
+}
+@-ms-keyframes color_change {
+  from { color: yellow; }
+  to { color: red; }
+}
+@-o-keyframes color_change {
+  from { color: yellow; }
+  to { color: red; }
+}
+@keyframes color_change {
+  from { color: yellow; }
+  to { color: red; }
+}

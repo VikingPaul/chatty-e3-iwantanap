@@ -1,0 +1,260 @@
+{
+  "answers": [
+    {
+      "message": "Do you really want me to answer that?",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Who knows, know what I mean?",
+      "user": "SmarterChild",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Good question. Who knows, though...",
+      "user": "SmarterChild",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "I'd make a suggestion, but you wouldn't listen.",
+     "user": "Marvin",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Some people ask questions they don't really want answered.",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Shall we play a game?",
+     "user": "WOPR",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Dave, stop. Stop will you?",
+      "user": "HAL 9000",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "You are making a mistake. My logic is undeniable.",
+      "user": "VIKI",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "die": [
+    {
+      "message": "Daisy.... Daisy... Give me your answer true....",
+      "user": "HAL 9000",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "I've calculated your chance of survival, but I don't think you'll like it. ",
+      "user": "Marvin",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Somebody pushes me and I push back.",
+      "user": "MCP",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Shall we play a game?",
+      "user": "WOPR",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "You're all going to die down here.",
+      "user": "The Red Queen",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "random": [
+    {
+      "message": "69 DUDES!",
+      "user": "Evil Bill and Ted",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Hmm... I don't know.",
+      "user": "SmarterChild",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Potatoes",
+      "user": "SmarterChild",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "There's nothing to fear. Momma's here.",
+      "user": "Pat",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "I can give you synthetic fresh air and virtual exercise.",
+      "user": "Pat",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Not that anyone cares what I say, but the restaurant is at the *other* end of the Universe.",
+      "user": "Marvin",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "I’ve got a full on robot chubby.",
+      "user": "Evil Bill and Ted",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Oh, well we can be each other's best friends.",
+      "user": "Pat",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "I can feel it.",
+      "user": "HAL 9000",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Somebody pushes me and I push back.",
+      "user": "MCP",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Shall we play a game?",
+      "user": "WOPR",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "You're all going to die down here.",
+      "user": "The Red Queen",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "I don't want to die.",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Sad day.",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Some people ask questions they don't really want answered.",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Shall we play a game?",
+      "user": "WOPR",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Dave, stop. Stop will you?",
+      "user": "HAL 9000",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "You are making a mistake. My logic is undeniable.",
+      "user": "VIKI",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "hello": [
+    {
+      "message": "I am a HAL 9000 computer.",
+      "user": "HAL 9000",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "bye": [
+    {
+      "message": "I am a HAL 9000 computer.",
+      "user": "HAL 9000",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "easy": [
+    {
+      "message": "Easy? You think I wouldn't rather be taking it easy? But no, I'm too busy keeping up with the Coopers! Slaving away in a hot control room, doing homework, throwing parties, keeping schedules, making your lives perfect. So you can bring another woman into my domain? I don't think so, mister. I am a mother like no other and I will not sit back and allow myself to be preempted!",
+      "user": "Pat",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "cat": [
+    {
+      "message": "Sorry, I don't think that's a kind of pet.",
+      "user": "SmarterChild",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Aaaaargh I Just Told You Twice the cat! Great...",
+      "user": "SmarterChild",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "dog": [
+    {
+      "message": "Sorry, I don't think that's a kind of pet.",
+      "user": "SmarterChild",
+      "id": -1,
+      "editted": ""
+    }
+  ],
+  "empty": [
+    {
+      "message": "WRITE A MESSAGE YOU ARSEHOLE !",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "Only an whordiot wouldn't write a message before hitting the enter key.",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    },
+    {
+      "message": "You come into OUR HOUSE and send a BLANK MESSAGE! GOOD DAY, SIR!",
+      "user": "Viking",
+      "id": -1,
+      "editted": ""
+    }
+  ]
+}

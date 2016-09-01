@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Bonbon|Indie+Flower|Lobster+Two:700|Michroma|Candal' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="chattystyle.css">
+    <title>Chatty (I-Want-A-Nap)</title>
+  </head>
+
+
+  <body class=""><!-- Themes needs to be added to sans modal to flip the theme -->
+
+    <!-- Building the nav bar -->
+      <nav class="navbar navbar-fixed-top">
+        <p class="navbar-brand nav-font">Chatty!</p>
+        <form class="navbar-form navbar-left" onsubmit="return false">
+          <div class="form-group container-fluid">
+            <input type="text" id="message-input" class="form-control input-width" placeholder="Enter Message - press Return Key to submit">
+            <!-- User dropdown in nav bar -->
+
+            <select id="user-dropdown" class="form-control">
+              <option value="defaultVal">Select User</option>
+              <option value="addUser">+Add User</option>
+            </select>
+            <!-- End user dropdown in nav bar -->
+            <button type="button" id="clear-board" class="btn btn-default"><span class="glyphicon glyphicon-alert"></span>Clear Message Board</button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#themeModal"><span class="glyphicon glyphicon-picture"></span>Chatty Themes</button>
+          </div>
+        </form>
+      </nav>
+      <!-- End of the nav bar -->
+
+      <!-- The container for the messages text -->
+      <div id="message-area" class="container"> <!-- The class of 'larger-text' needs to be added to body to make the message text larger -->
+      </div>
+      <!-- End of the container for the messages text -->
+
+
+    </div>
+    <!-- End of main body -->
+
+    <!-- MODAL FOR THEMES - If you put inside body, it applies themes to modal. -->
+    <div class="modal fade" id="themeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="themeModalLabel">Select your theme, butthead.</h4>
+          </div>
+          <div class="modal-body">
+            <!-- Building the checkbox bar -->
+            <div id="checkbox-area" class="container-fluid">
+              <div class="row">
+                  <div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1">
+                  <h3>Accessibility</h3>
+                  <label class="checkbox">
+                    <input type="checkbox" id="dark-theme" value="darktheme"> Dark Theme
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" id="large-text" value="largetext"> Large Text
+                  </label>
+                  </div>
+
+                  <div class="col-xs-6 col-xs-offset-1 col-sm-6 col-sm-offset-1">
+                  <h3>Themes</h3>
+                  <label class="radio">
+                    <input type="radio" name="themeSelect" id="theme1" value="theme1"> Lisa Frank
+                    <img src="img/theme1.jpg">
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="themeSelect" id="theme2" value="theme2"> SpaceJam Phresh
+                    <img src="img/theme2.jpg">
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="themeSelect" id="theme3" value="theme3"> I'm Boring
+                    <img src="img/theme3.jpg">
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="themeSelect" id="theme4" value="theme4"> BURN WITH FIRE
+                    <img src="img/theme4.jpg">
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="themeSelect" id="themeNone" value="themeNone"> Original
+                  </label>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of the MODAL-->
+
+    
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+  <script src="javascripts/chatty.js"></script>
+  <script src="javascripts/createMessages.js"></script>
+  <script src="javascripts/addMessages.js"></script>
+  <script src="javascripts/deleteMessage.js"></script>
+  <script src="javascripts/edit.js"></script>
+  <script src="javascripts/users.js"></script>
+  <script src="javascripts/curse.js"></script>
+  <script src="javascripts/eventListeners.js"></script>
+  <script src="javascripts/start.js"></script>
+  <script src="javascripts/ai.js"></script>
+  <script src="javascripts/emoji.js"></script>
+
+  </body>
+</html>
